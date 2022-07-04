@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(./BoilerRoom.jpg) no-repeat center top;
+    /*background-color: rgb(224, 224, 224);*/
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100vh;
+  }
+  
+  .formulario {
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 25%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    opacity: .8;
+    transition: .5s;
+  }
+  .formulario:hover, .formulario-registro:hover{
+    opacity: .9;
+    transition: .5s;
+    border:0px solid white;
+  }
+  
+  .formulario .logo, .formulario-registro .logo-registro {
+    width: 100px;
+    height: 100px;
+    border-radius: 60%;
+    position: absolute;
+    z-index: -2;
+    top: -64px;
+    left: calc(50% - 50px);
+  }
+  
+  .formulario h1, .formulario-registro h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+  }
+  
+  .formulario label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .formulario-registro label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+  }
+  
+  .formulario input, .formulario-registro input  {
+    width: 100%;
+    margin-bottom: 20px;
+    border-color: white;
+  }
+  
+  .input-transparent {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .btn {
+    border: none;
+    outline: none;
+    height: 35px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 20px;
+    transition: .7s;
+    cursor: pointer;
+  }
+  
+  .btn-danger{
+    background-color:#a31010;
+    color:white;
+  }
+  
+  .btn-danger:hover{
+    background-color:#6d0a0a;
+    color:white;
+    transition: .7s;
+  }
+  
+  .formulario .btn-submit:hover, .formulario-registro .btn-submit:hover {
+    cursor: pointer;
+    background: #ce0b0b;
+    color: #fff;
+    transition: .7s;
+    opacity: 1;
+  }
+  
+  .formulario a, .formulario-registro a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+  }
+  
+  .formulario a:hover {
+    color: darkgrey;
+  }
+  input:focus{
+    outline: none;
+    color:white;
+    border-bottom-color:white;
+  }
+  
+  input:invalid:focus{
+    color:#d41a1a;
+    border-bottom-color: #d41a1a;
+  }
+  
+  input:valid:focus{
+    color:#069c38;
+    border-bottom-color: #069c38;
+  }
+  
+  .formulario-registro{
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 2px;
+    height: auto;
+    background: #000;
+    color: #fff;
+    top: 50%;
+    left: 75%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 20px 30px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 50px;
+    opacity: .8;
+    transition: .5s;
+  }
+  
+  .formulario-registro a:hover {
+    color: darkgrey;
+  }
+  select{
+    background-color: transparent;
+    color:white;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  option{
+    color:black;
+  }
+  
+  .icono{
+    float: right;
+    margin-right: 6px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+  
+  .btn-icono-left{
+    float: left;
+    margin-left: 82px;
+    margin-top: -45px;
+    position: relative;
+    z-index: 2;
+    color: white;
+  }
+  
